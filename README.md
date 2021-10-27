@@ -1,0 +1,2 @@
+# javascript-basic
+Learning purpose
