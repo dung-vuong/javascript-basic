@@ -1,0 +1,17 @@
+body, html{
+    font-size: 17px;
+    margin: 0;
+    height: 100%;
+}
+.imgLink img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.1;
+}
+legend{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(184, 27, 27);
+}

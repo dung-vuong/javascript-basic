@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Store</title>
+        <script src="./confirm.js"></script>
+        <link rel="stylesheet" href="./confirm.css">
+    </head>
+    <body>
+        <div class="imgLink">
+            <img src="shopping.png" alt="imgLink">
+        </div>
+        <div>
+            <form>
+                <fieldset class="showRegister">
+                    <legend>Register Product</legend>
+                    <dl>
+                        <dt>Product ID</dt>
+                        <dd><input type="number" min="1" max="10" id="proID" value="0"></dd>
+                        <dt>Product Name</dt>
+                        <dd><input type="text" id="proName"></dd>
+                        <dt>Product Price</dt>
+                        <dd><input type="range" min="10" max="1000" id="proPrice" value="10"></dd>
+                        <dt>Product Manufactured</dt>
+                        <dd><input type="date" id="proManu"></dd>
+                        <dt>In stock?</dt>
+                        <dd>
+                            <input type="radio" name="stock" value="in" id="yes">Yes 
+                            <input type="radio" name="stock" value="out" id="no">No
+                        </dd>
+                        <dt>Ship From</dt>
+                        <dd>
+                            <select id="city">
+                                <option value="blank"></option>
+                                <option value="China">China ($4.99)</option>
+                                <option value="Russia">Russia ($7.99)</option>
+                                <option value="Vietnam">Vietnam ($2.99)</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <br>
+                    <input type="button" value="Register" onclick="Register()">
+                </fieldset>
+
+                <br>
+                
+                <fieldset id="showList">
+                    <legend>Show List</legend>
+                    <table width="400" border="1">
+                        <tr>
+                            <td>Product ID</td>
+                            <td id="listID"></td>
+                        </tr>
+                        <tr>
+                            <td>Product Name</td>
+                            <td id="listName"></td>
+                        </tr>
+                        <tr>
+                            <td>Product Price</td>
+                            <td id="listPrice"></td>
+                        </tr>
+                        <tr>
+                            <td>Product Manufactured</td>
+                            <td id="listManu"></td>
+                        </tr>
+                        <tr>
+                            <td>In Stock?</td>
+                            <td id="inStock"></td>
+                        </tr>
+                        <tr>
+                            <td>Ship From</td>
+                            <td id="listCity"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
