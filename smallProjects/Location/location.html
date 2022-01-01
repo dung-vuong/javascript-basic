@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find Location</title>
+        <script src="./location.js"></script>
+    </head>
+    <body>
+        <div>
+            <div align="center">
+                <input type="button" value="Get client location details" onclick="getDetails()">
+                <input type="button" value="Refresh" onclick="">
+            </div>
+            <div id="details" style="display: none">
+                <dl>
+                    <dt>Server Name / IP Address</dt>
+                    <dd id="host"></dd>
+                    <dt>Protocol</dt>
+                    <dd id="protocol"></dd>
+                    <dt>URL</dt>
+                    <dd id="url"></dd>
+                </dl>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Website</title>
+        <script src="./food.js"></script>
+    </head>
+    <body>
+        <div><font size="6">
+            <table width="800" border="2" cellspacing="4" cellpadding="4" align="center" id="orderform">
+                <tr>
+                    <td colspan="2"><img src="food.jpg" width="900" height="400"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">Customer Details</td>
+                </tr>
+                <tr>
+                    <td>Customer Name</td>
+                    <td><input type="text" id="textName"></td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td><input type="text" id="textMobile"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">Choose your items</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="shumai.jpg" width="450" height="250">
+                        <br>
+                        <input type="radio" name="meal" id="shumai" value="Shumai">Shumai($5.95/each)
+                    </td>
+                    <td>
+                        <img src="hacao.jpg" width="450" height="250">
+                        <br>
+                        <input type="radio" name="meal" id="hacao" value="Hacao">Hacao($5.95/each)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">Select add-on's</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="wonton.jpg" width="450" height="250">
+                        <br>
+                        <input type="checkbox" id="wonton" value="Wonton">Wonton($3.95/each)
+                    </td>
+                    <td>
+                        <img src="eggroll.jpg" width="450" height="250">
+                        <br>
+                        <input type="checkbox" id="eggroll" value="Eggroll">Eggroll($3.95/each)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="button" value="Purchase" onclick="purchase()"></td>
+                </tr>
+            </table>
+            <br>
+            <dl id="summary" style="display: none;">
+                <h2>Order Summary</h2>
+                <dt>Customer Name</dt>
+                <dd id="orderName"></dd>
+                <dt>Mobile</dt>
+                <dd id="orderMobile"></dd>
+                <dt>Meal</dt>
+                <dd id="orderMeal"></dd>
+                <dt>Total</dt>
+                <dd id="orderTotal"></dd>
+                <br>
+                <input type="button" value="print" onclick="window.print()">
+            </dl>
+        </div>
+    </body>
+</html>

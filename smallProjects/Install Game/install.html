@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Install Game</title>
+        <script src="./install.js"></script>
+    </head>
+    <body>
+        <div>
+            <fieldset>
+                <legend>Login</legend>
+                <dl>
+                    <dt>Select Game</dt>
+                    <dd>
+                        <select id="game" onchange="selectGame()">
+                            <option value=""></option>
+                            <option value="2">League of Legends</option>
+                            <option value="5">Apex Legend</option>
+                            <option value="10">Valorant</option>
+                        </select>
+                    </dd>
+                    <dt>Select RAM</dt>
+                    <dd>
+                        <input type="number" min="1" max="8" value="1" id="ram" disabled onchange="selectRam()">
+                    </dd>
+                    <dt>Graphic Card is available?</dt>
+                    <dd>
+                        <select id="card" disabled onchange="selectCard()">
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
+                        </select>
+                    </dd>
+                    <br>
+                    <input type="button" id="install" value="Install" disabled onclick="install()">
+                </dl>
+            </fieldset>
+        </div>
+    </body>
+</html>
